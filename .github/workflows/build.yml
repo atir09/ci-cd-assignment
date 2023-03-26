@@ -1,15 +1,15 @@
-name: Install Node
-on: push
-jobs:
-    print-version:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Install Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: '14.x'
-        - name: Print Node version
-          run: node -v
+# name: Install Node
+# on: push
+# jobs:
+#     print-version:
+#       runs-on: ubuntu-latest
+#       steps:
+#         - name: Install Node.js
+#           uses: actions/setup-node@v2
+#           with:
+#             node-version: '14.x'
+#         - name: Print Node version
+#           run: node -v
 
 name: Run Eslint
 on: push
