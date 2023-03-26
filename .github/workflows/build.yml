@@ -17,16 +17,16 @@ jobs:
     eslint:
       runs-on: ubuntu-latest
       steps:
-          - name: Checkout code
-            uses: actions/checkout@v3
-          - name: Install Node-js
-            uses: actions/setup-node@v2
-            with:
-              node-version: "14.x"
-          - name: Install Dependencies
-            run: npm install
-          - name: Run Eslint
-            run: npx eslint
-          -name: Run code
-            run: node index.js
+        - name: Checkout code
+          uses: actions/checkout@v3
+        - name: Install Node-js
+          uses: actions/setup-node@v2
+          with:
+            node-version: "14.x"
+        - name: Install Dependencies
+          run: npm install
+        - name: Run Eslint
+          run: npx eslint
+        - name: Run code
+          run: node index.js
           
